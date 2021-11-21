@@ -19,3 +19,19 @@ for d in data:
 	if len(d) < 100:
 		new.append(d)
 print(f'一共有{len(new)}筆資料長度小於100')
+
+
+good = []
+for d in data:
+	if "good" in d:
+		good.append(d)
+print(f'一共有{len(good)}筆資料提到good')
+#good = [d in d in data if "good" in d] 進階寫法
+
+bad = []
+for d in data:
+	if "bad" in d:
+		bad.append("bad" in d)
+print(f'一共有{len(bad)}筆資料提到bad')
+#bad = ["bad" in d for d in data] bad是否在data裡
+
